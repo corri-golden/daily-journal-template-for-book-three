@@ -12,4 +12,7 @@ API.getJournalEntries()
 .then(response => renderDom.renderJournalEntries(response))
 
 
-
+document.querySelector("#recordEntry").addEventListener("click", function(event) {
+    console.log("You clicked on the body of the DOM")
+    debugger
+})
