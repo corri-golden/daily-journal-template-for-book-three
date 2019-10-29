@@ -1,3 +1,6 @@
+import API from "./data.js"
+import renderDom from "./entriesDOM.js"
+
 /*
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
@@ -7,3 +10,6 @@
 */
 API.getJournalEntries()
 .then(response => renderDom.renderJournalEntries(response))
+
+
+

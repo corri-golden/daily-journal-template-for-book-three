@@ -1,3 +1,7 @@
+import renderDom from "./entriesDOM.js"
+
+
+
 const entryManager = {
 
   makeJournalEntryComponent(journalEntry) {
@@ -12,3 +16,7 @@ const entryManager = {
     `
   }
 }
+
+
+export default entryManager
+
