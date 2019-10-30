@@ -11,8 +11,14 @@ import renderDom from "./entriesDOM.js"
 API.getJournalEntries()
 .then(response => renderDom.renderJournalEntries(response))
 
-
+// Listen for Submit Button Click
 document.querySelector("#recordEntry").addEventListener("click", function(event) {
-    console.log("You clicked on the body of the DOM")
-    debugger
-})
+    })
+
+// Collecting Data from the Input Fields
+    const conceptsInputValue = document.querySelector("#conceptsInput").value
+    const journalInputValue = document.querySelector("#journalEntry").value
+
+console.log(conceptsInputValue, journalInputValue);
+
+
