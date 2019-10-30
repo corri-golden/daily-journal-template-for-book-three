@@ -13,12 +13,20 @@ API.getJournalEntries()
 
 // Listen for Submit Button Click
 document.querySelector("#recordEntry").addEventListener("click", function(event) {
-    })
-
-// Collecting Data from the Input Fields
     const conceptsInputValue = document.querySelector("#conceptsInput").value
     const journalInputValue = document.querySelector("#journalEntry").value
+    
+    if (conceptsInputValue.value.length === null) {
+        alert('Please enter Value');
+    } if (journalInputValue.value.length === null) {
+        alert('Please enter Value');
+    }
+})
 
-console.log(conceptsInputValue, journalInputValue);
+// Collecting Data from the Input Fields
+    // const conceptsInputValue = document.querySelector("#conceptsInput").value
+    // const journalInputValue = document.querySelector("#journalEntry").value
+
+
 
 
