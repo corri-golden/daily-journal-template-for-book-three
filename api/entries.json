@@ -1,25 +1,86 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "07/24/2018",
-            "concept": "Array methods",
-            "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
-            "mood": "Ok"
-        },
-        {
-            "id": 2,
-            "date": "08/02/2018",
-            "concept": "Fetch calls",
-            "entry": "How to get data from an API",
-            "mood": "Ok"
-        },
-        {
-            "id": 3,
-            "date": "07/07/2018",
-            "concept": "CSS Selectors",
-            "entry": "How to use classes and ids to apply CSS to elements on the DOM",
-            "mood": "Ok"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2018",
+      "concept": "Array methods",
+      "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
+      "mood": "Ok"
+    },
+    {
+      "id": 2,
+      "date": "08/02/2018",
+      "concept": "Fetch calls",
+      "entry": "How to get data from an API",
+      "mood": "Ok"
+    },
+    {
+      "id": 3,
+      "date": "07/07/2018",
+      "concept": "CSS Selectors",
+      "entry": "How to use classes and ids to apply CSS to elements on the DOM",
+      "mood": "Ok"
+    },
+    {
+      "date": {},
+      "conceptsCovered": {},
+      "journalEntry": {},
+      "mood": {},
+      "id": 4
+    },
+    {
+      "conceptsCovered": "",
+      "journalEntry": "",
+      "mood": "",
+      "id": 5
+    },
+    {
+      "date": "2019-10-08",
+      "conceptsCovered": "ryan",
+      "journalEntry": "da man",
+      "id": 6
+    },
+    {
+      "date": "2019-10-08",
+      "conceptsCovered": "hug ",
+      "journalEntry": "time",
+      "mood": "Great",
+      "id": 7
+    },
+    {
+      "date": "2019-10-01",
+      "conceptsCovered": "fd",
+      "journalEntry": "fgd",
+      "mood": "Amazing",
+      "id": 8
+    },
+    {
+      "date": "2019-10-15",
+      "conceptsCovered": "fdjuujjj",
+      "journalEntry": "fgdgghnn",
+      "mood": "Ok",
+      "id": 9
+    },
+    {
+      "date": "2019-10-04",
+      "conceptsCovered": "dat",
+      "journalEntry": "duu",
+      "mood": "Great",
+      "id": 10
+    },
+    {
+      "date": "2019-10-08",
+      "conceptsCovered": "gbjhb",
+      "journalEntry": "bjbjkm",
+      "mood": "Amazing",
+      "id": 11
+    },
+    {
+      "date": "2019-10-08",
+      "concepts": "kjhlksf",
+      "entry": "fsfs",
+      "mood": "Great",
+      "id": 12
+    }
+  ]
 }
