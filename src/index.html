@@ -34,16 +34,17 @@
                 <option value="Ok">Ok</option>
             </select>
         </fieldset>
-        <fieldset>
-            <input type="radio" value="Sad" name="mood filter"></input>
-            <label>Sad</label>
-            <input type="radio" value="Happy"></input>
-            <label>Happy</label>
-            <input type="radio" value="Ok"></input>
-            <label>Ok</label>
-        </fieldset>
     </form>
     <button id="recordEntry">Record Journal Entry</button>
+    <fieldset>
+        <label>Mood Filter:</label>
+        <input type="radio" id="sadMood" value="Sad" name="mood filter"></input>
+        <label>Sad</label>
+        <input type="radio" id="happyMood" value="Happy" name="mood filter"></input>
+        <label>Happy</label>
+        <input type="radio" id="okMood" value="Ok" name="mood filter"></input>
+        <label>Ok</label>
+    </fieldset>
 
     <article class="entryLog">
 

@@ -56,7 +56,17 @@ document.querySelector("#recordEntry").addEventListener("click", function () {
 })
 //get the data from API then put on DOM
     
+document.querySelector("#sadMood").addEventListener("click", () =>  {
+    console.log("Button was click")
+} )
 
+document.querySelector("#happyMood").addEventListener("click", function () {
+    console.log("Button was click") 
+} )
+
+document.querySelector("#okMood").addEventListener("click", function () {
+    console.log("Button was clicked")
+} )
 
 // testing to see if the postEntry function works
 // passed the created newJournalEntries inside the call
