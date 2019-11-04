@@ -55,19 +55,28 @@ document.querySelector("#recordEntry").addEventListener("click", function () {
     .then(API.getJournalEntries).then(renderDom.renderJournalEntries)
 })
 //get the data from API then put on DOM
-    
-document.querySelector("#sadMood").addEventListener("click", () =>  {
-    console.log("Button was click")
-} )
+// querySelector to target all the classes.  Use forEach to loop through the buttons.  Naming each item in the array button.    
+document.querySelectorAll(".radioButton").forEach(button => {
+    button.addEventListener("click", function () {
+    console.log(button.value)           // console logging the value of each button
+    API.getJournalEntries()             // get data and call
+        .then(entries => {         // response default name for data.  I changed it to entries
+        let temporaryStorage = []                            // console.log(entries)
+        entries.forEach(entry => {
+            if (entry.mood === button.value) {                // going through the to check the mood on each item. 
+                temporaryStorage.push(entry)              // .push putts the data in the temporarybutton
+            }
+        }) 
+        renderDom.renderJournalEntries(temporaryStorage)          //putting the data onto the DOM         
+    })                          // happens next
+})
+})
 
-document.querySelector("#happyMood").addEventListener("click", function () {
-    console.log("Button was click") 
-} )
 
-document.querySelector("#okMood").addEventListener("click", function () {
-    console.log("Button was clicked")
-} )
 
 // testing to see if the postEntry function works
 // passed the created newJournalEntries inside the call
 // API.postEntry(newJournalEntries);
+
+
+console.log("lets go")
