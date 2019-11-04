@@ -1,3 +1,5 @@
+import entryManager from "./entryComponent.js"
+
 /*
     Purpose: To render all journal entries to the DOM
 
@@ -14,3 +16,10 @@ const renderDom = {
     logArticle.innerHTML = HtmlForAllEntries
   }
 }
+
+
+
+
+
+
+export default renderDom

@@ -16,35 +16,41 @@
     <form>
         <fieldset>
             <label for="date-input">Date of entry</label>
-            <input type="date" name="date-input">
+            <input id="dateInput" type="date" name="date-input">
         </fieldset>
         <fieldset>
             <label for="concept-input">Concepts covered</label>
-            <input type="text" name="concept-input">
+            <input id="conceptsInput" type="text" name="concept-input">
         </fieldset>
         <fieldset>
             <label for="entry-input">Journal entry</label>
-            <textarea name="entry-input"></textarea>
+            <textarea id="journalEntry" name="entry-input"></textarea>
         </fieldset>
         <fieldset>
             <label for="mood-input">Mood</label>
-            <select class="mood" name="mood-input">
+            <select id="moodInput" class="mood" name="mood-input">
                 <option value="Amazing">Amazing</option>
                 <option value="Great">Great</option>
                 <option value="Ok">Ok</option>
             </select>
         </fieldset>
-        <button>Record Journal Entry</button>
     </form>
+    <button id="recordEntry">Record Journal Entry</button>
+    <fieldset>
+        <legend>Filter Journal Entries by Mood:</legend>
+        <input type="radio" class="radioButton" id="sadMood" value="Amazing" name="mood filter"></input>
+        <label>Amazing</label>
+        <input type="radio" class="radioButton" id="happyMood" value="Great" name="mood filter"></input>
+        <label>Great</label>
+        <input type="radio" class="radioButton" id="okMood" value="Ok" name="mood filter"></input>
+        <label>Ok</label>
+    </fieldset>
 
     <article class="entryLog">
 
     </article>
 
-    <script src="./scripts/data.js"></script>
-    <script src="./scripts/entryComponent.js"></script>
-    <script src="./scripts/entriesDOM.js"></script>
-    <script src="./scripts/journal.js"></script>
+    <script type="module" src="./scripts/journal.js"></script>
 </body>
 
 </html>
