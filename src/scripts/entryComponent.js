@@ -13,6 +13,7 @@ const entryManager = {
         <p>${journalEntry.mood}</p>
         <p>${journalEntry.date}</p>
       </section>
+      <button>Delete</button>
     `
   },  // created a factory function for the object of creating a journal.
   createJournalObj(date, concept, entry, mood) {
