@@ -1,6 +1,8 @@
 import API from "./data.js"
 import renderDom from "./entriesDOM.js"
 import entryManager from "./entryComponent.js"
+import events from "./events.js"
+
 
 /*
     Main application logic that uses the functions and objects
@@ -79,4 +81,7 @@ document.querySelectorAll(".radioButton").forEach(button => {
 // API.postEntry(newJournalEntries);
 
 
-console.log("lets go")
+
+
+// --------------- Journal 3 delete----------------------------------------------
+events.registerDeleteListener()        
