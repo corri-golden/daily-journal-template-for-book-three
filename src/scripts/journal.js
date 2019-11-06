@@ -2,6 +2,7 @@ import API from "./data.js"
 import renderDom from "./entriesDOM.js"
 import entryManager from "./entryComponent.js"
 import events from "./events.js"
+import journalEntries from "./api.js"
 
 
 /*
@@ -84,4 +85,10 @@ document.querySelectorAll(".radioButton").forEach(button => {
 
 
 // --------------- Journal 3 delete----------------------------------------------
-events.registerDeleteListener()        
+// Invoke the method that attaches the event listener
+events.registerDeleteListener()
+
+// Get all recipes from API and render them in the DOM
+API.getJournalEntries().then()
+
+
